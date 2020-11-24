@@ -9,7 +9,7 @@ There are two options for this sample application depending on what you have ava
 
 ### Prerequisites
 
-1. Deploy the JBoss Eap-7.3 image as well as the runtime.
+1. Deploy the OpenJ9 based JBoss Eap-7.3 image as well as the runtime on an IBM Z machine.
 ```
 oc replace --force -f \
 https://raw.githubusercontent.com/jboss-container-images/jboss-eap-openshift-templates/eap73/eap73-openj9-image-stream.json
@@ -26,7 +26,7 @@ oc import-image rhscl/mongodb-36-rhel7 --from=registry.access.redhat.com/rhscl/m
 Reference: [RH Source of Mongo 3.6](https://catalog.redhat.com/software/containers/rhscl/mongodb-36-rhel7/5aa62427ac3db95f19608637?architecture=s390x&container-tabs=gti&gti-tabs=unauthenticated)
 
 
-3. Creating the environment using the mlbparks template.
+3. Create the environment using the mlbparks template and start the deployment.
 ```
 oc create -f https://raw.githubusercontent.com/ajaypvictor/openshift3mlbparks/master/mlbparks-template-eap.json
 oc new-app mlbparks-eap
