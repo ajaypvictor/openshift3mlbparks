@@ -31,7 +31,8 @@
 	
 </head>
 <body>
-	<h1 id="title">MLB Stadiums on OpenShift 3 v2</h1>
+	<h1 id="title">MLB Stadiums on OpenShift 4.5 on IBM Z</h1>
+	<h2 id="title" style="left:50px; top:50px;"><img src="images/linuxonelogo_small.png"></h2>
 	<div id="map"></div>
 	<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script> 
 	<script>
@@ -41,7 +42,7 @@
 		var markerLayerGroup = L.layerGroup().addTo(map);
 		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			maxZoom: 18,
-			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a></br>Hosted on an <a href="https://www.ibm.com/it-infrastructure/linuxone" target="_blank">IBM LinxONE</a>'
 		}).addTo(map);
 
 		
