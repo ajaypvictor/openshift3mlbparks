@@ -15,6 +15,7 @@ oc replace --force -f \
 https://raw.githubusercontent.com/jboss-container-images/jboss-eap-openshift-templates/eap73/eap73-openj9-image-stream.json
 
 for resource in   eap73-amq-persistent-s2i.json   eap73-amq-s2i.json   eap73-basic-s2i.json   eap73-https-s2i.json   eap73-sso-s2i.json; do oc replace --force -f https://raw.githubusercontent.com/jboss-container-images/jboss-eap-openshift-templates/eap73/templates/${resource}; done
+
 ```
 Reference: [Redhat JBoss EAP for OCP](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.3/html/getting_started_with_jboss_eap_for_openshift_container_platform/build_run_java_app_s2i#deploy_eap_s2i)
 
